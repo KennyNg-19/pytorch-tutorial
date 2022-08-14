@@ -1,3 +1,10 @@
+'''
+Author: kenny_wu
+Date: 2022-08-15 01:56:56
+LastEditors: kenny_wu
+LastEditTime: 2022-08-15 01:59:23
+Description: 
+'''
 import torch
 import torch.nn as nn
 import torchvision
@@ -6,6 +13,7 @@ import torchvision.transforms as transforms
 
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('device:', device)
 
 # Hyper-parameters 
 input_size = 784
