@@ -27,12 +27,12 @@ transform = transforms.Compose([
     transforms.ToTensor()])
 
 # CIFAR-10 dataset
-train_dataset = torchvision.datasets.CIFAR10(root='../../data/',
+train_dataset = torchvision.datasets.CIFAR10(root='data/',
                                              train=True, 
                                              transform=transform,
                                              download=True)
 
-test_dataset = torchvision.datasets.CIFAR10(root='../../data/',
+test_dataset = torchvision.datasets.CIFAR10(root='data/',
                                             train=False, 
                                             transform=transforms.ToTensor())
 
